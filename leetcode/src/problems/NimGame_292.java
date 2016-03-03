@@ -1,7 +1,7 @@
 package problems;
 
 /**
- * һ�ο��Լ������max�������������Ӯ����ʲô�����¿��ܻ�Ӯ
+ * 一次可以减掉最大max个，最后减完的人赢，问什么总数下可能会赢
  * @author zhaoye
  *
  */

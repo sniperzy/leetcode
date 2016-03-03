@@ -1,7 +1,7 @@
 package problems;
 
 /**
- * 连续链表改为先奇后偶
+ * 杩炵画閾捐〃鏀逛负鍏堝鍚庡伓
  * @author zhaoye
  */
 public class OddEvenLinkedList_328 {
