@@ -1,5 +1,7 @@
 package problems;
 
+import entity.ListNode;
+
 /**
  * 连续链表改为先奇后偶
  * @author zhaoye
@@ -48,14 +50,5 @@ public class OddEvenLinkedList_328 {
 		OddEvenLinkedList_328 exam = new OddEvenLinkedList_328();
 		ListNode node = exam.init();
 		exam.oddEvenList(node);
-	}
-	
-	public class ListNode {
-		int val;
-		ListNode next;
-
-		ListNode(int x) {
-			val = x;
-		}
 	}
 }

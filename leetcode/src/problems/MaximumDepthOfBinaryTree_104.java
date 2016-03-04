@@ -1,5 +1,7 @@
 package problems;
 
+import entity.TreeNode;
+
 /**
  * 计算二叉树最大深度
  * @author zhaoye
@@ -31,16 +33,6 @@ public class MaximumDepthOfBinaryTree_104 {
 		r2.right = r5;
 		
 		return root;
-	}
-	
-	public class TreeNode {
-		int val;
-		TreeNode left;
-		TreeNode right;
-
-		TreeNode(int x) {
-			val = x;
-		}
 	}
 	
 	public static void main(String[] args) {
