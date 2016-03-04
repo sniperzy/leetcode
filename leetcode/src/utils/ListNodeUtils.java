@@ -30,6 +30,19 @@ public class ListNodeUtils {
 		return node;
 	}
 	
+	public static ListNode getListNodeByDepth(ListNode node, int depth){
+		ListNode result = node;
+		if(node == null || depth <= 0){
+			return null;
+		}
+		
+		for(int i=1;i<depth;i++){
+			result = result.next;
+		}
+		
+		return result;
+	}
+	
 	public static void main(String[] args) {
 		ListNode node = genListNode(new int[]{1,2,3,4,5,6});
 		System.out.println(node);
