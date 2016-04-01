@@ -217,15 +217,29 @@ public final class StringUtils {
 	 * @return
 	 */
 	public static String formatCodeStr(String code, int leng, boolean limit) {
+		return formatCodeStr(code, char0, leng, limit);
+	}
+	
+	/**
+	 * 以规定长度填充字符
+	 * 
+	 * @param code
+	 * @param fillStr
+	 * @param leng
+	 * @param limit
+	 *            :true限制长度必须小于leng规定的值,false则可以大于这个长度，但小于这个长度则补起
+	 * @return
+	 */
+	public static String formatCodeStr(String code, String fillStr, int leng, boolean limit) {
 		if (code.length() < leng) {
-			return formatCodeStr(char0 + code, leng, limit);
+			return formatCodeStr(fillStr + code, fillStr, leng, limit);
 		} else {
 			if (limit) {
 				return code.substring(code.length() - leng);
 			}
 			return code;
 		}
-
+		
 	}
 
 	/**
